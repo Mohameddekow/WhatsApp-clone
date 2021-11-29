@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WhatsApp-clone</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">login</string>
+    <string name="email">email</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_and_account">don\'t have an account?</string>
+    <string name="full_name">full name</string>
+    <string name="email_address">email address</string>
+    <string name="password">password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="i_agree_to_the_terms_and_conditions">i agree to the terms and conditions</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">already have an account</string>
+</resources>
