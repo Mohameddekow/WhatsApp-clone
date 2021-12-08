@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".splash.onBoarding.screens.CallsSplashFragment">
+    tools:context=".splash.onBoarding.screens.SplashOneFragment">
 
 
     <ImageView

@@ -7,14 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import androidx.viewpager2.widget.ViewPager2
 import com.example.whatsapp_clone.R
-import com.example.whatsapp_clone.databinding.CallsFragmentBinding
-import com.example.whatsapp_clone.databinding.FragmentGroupsChatsBinding
+import com.example.whatsapp_clone.databinding.FragmentSplashThreeBinding
 
-class GroupsChatsFragment : Fragment() {
+class SplashThreeFragment : Fragment() {
 
-    private var _binding: FragmentGroupsChatsBinding? = null
+    private var _binding: FragmentSplashThreeBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -22,11 +20,11 @@ class GroupsChatsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentGroupsChatsBinding.inflate(inflater, container, false)
+        _binding = FragmentSplashThreeBinding.inflate(inflater, container, false)
 
         binding.apply {
             tvGroupFinish.setOnClickListener {
-                findNavController().navigate(R.id.action_viewPager2Fragment_to_loginFragment)
+                findNavController().navigate(R.id.action_onBoardingViewPager2Fragment_to_loginFragment)
                 onBoardingFinished()
             }
 

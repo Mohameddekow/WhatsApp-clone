@@ -45,26 +45,19 @@
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
-        android:id="@+id/viewPager2Fragment"
-        android:name="com.example.whatsapp_clone.splash.onBoarding.ViewPager2Fragment"
+        android:id="@+id/onBoardingViewPager2Fragment"
+        android:name="com.example.whatsapp_clone.splash.onBoarding.OnBoardingViewPager2Fragment"
         android:label="Welcome"
         tools:layout="@layout/fragment_view_pager2">
         <action
-            android:id="@+id/action_viewPager2Fragment_to_loginFragment"
-            app:destination="@id/loginFragment"
-            app:popUpTo="@id/viewPager2Fragment"
-            app:popUpToInclusive="true" />
+            android:id="@+id/action_onBoardingViewPager2Fragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.example.whatsapp_clone.splash.onBoarding.SplashFragment"
         android:label="Welcome"
         tools:layout="@layout/fragment_splash">
-        <action
-            android:id="@+id/action_splashFragment_to_viewPager2Fragment"
-            app:destination="@id/viewPager2Fragment"
-            app:popUpTo="@id/splashFragment"
-            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_splashFragment_to_homeFragment"
             app:destination="@id/homeFragment"
@@ -73,22 +66,57 @@
         <action
             android:id="@+id/action_splashFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_onBoardingViewPager2Fragment"
+            app:destination="@id/onBoardingViewPager2Fragment" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.whatsapp_clone.HomeFragment"
-        android:label="WhatsApp-clone"
-        tools:layout="@layout/fragment_home" >
+        android:label="test"
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
         <action
             android:id="@+id/action_homeFragment_to_callsFragment"
             app:destination="@id/callsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_messageAnAccountFragment"
+            app:destination="@id/messageAnAccountFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_starredMessagesFragment"
+            app:destination="@id/starredMessagesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
     </fragment>
     <fragment
         android:id="@+id/callsFragment"
         android:name="com.example.whatsapp_clone.tabs.calls.CallsFragment"
         android:label="Calls fragment"
-        tools:layout="@layout/calls_fragment" />
+        tools:layout="@layout/fragment_calls" />
+    <fragment
+        android:id="@+id/messageAnAccountFragment"
+        android:name="com.example.whatsapp_clone.homeMenuFragments.messageAnAccount.MessageAnAccountFragment"
+        android:label="fragment_message_an_account"
+        tools:layout="@layout/fragment_message_an_account" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.whatsapp_clone.homeMenuFragments.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.whatsapp_clone.homeMenuFragments.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/starredMessagesFragment"
+        android:name="com.example.whatsapp_clone.homeMenuFragments.starredMessages.StarredMessagesFragment"
+        android:label="fragment_starred_messages"
+        tools:layout="@layout/fragment_starred_messages" />
 </navigation>

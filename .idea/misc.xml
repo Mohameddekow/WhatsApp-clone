@@ -23,26 +23,33 @@
         <entry key="app/src/main/res/layout/calls_fragment.xml" value="0.3609375" />
         <entry key="app/src/main/res/layout/chats.xml" value="0.3609375" />
         <entry key="app/src/main/res/layout/chats_fragment.xml" value="0.3609375" />
+        <entry key="app/src/main/res/layout/fragment_calls.xml" value="0.2691358024691358" />
         <entry key="app/src/main/res/layout/fragment_calls_splash.xml" value="0.3609375" />
         <entry key="app/src/main/res/layout/fragment_chats_splash.xml" value="0.3609375" />
         <entry key="app/src/main/res/layout/fragment_fab_extension.xml" value="0.3609375" />
         <entry key="app/src/main/res/layout/fragment_groups_chats.xml" value="0.3609375" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3609375" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.3609375" />
+        <entry key="app/src/main/res/layout/fragment_message_an_account.xml" value="0.3609375" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.3609375" />
         <entry key="app/src/main/res/layout/fragment_register.xml" value="0.3609375" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.375" />
         <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.3609375" />
+        <entry key="app/src/main/res/layout/fragment_splash_two.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_starred_messages.xml" value="0.375" />
         <entry key="app/src/main/res/layout/fragment_view_pager2.xml" value="0.3609375" />
         <entry key="app/src/main/res/layout/login_fragment.xml" value="0.3609375" />
         <entry key="app/src/main/res/layout/register_fragment.xml" value="0.3609375" />
         <entry key="app/src/main/res/layout/status.xml" value="0.3609375" />
         <entry key="app/src/main/res/layout/status_fragment.xml" value="0.3609375" />
         <entry key="app/src/main/res/menu/fab_menu.xml" value="0.3609375" />
+        <entry key="app/src/main/res/menu/home_menu.xml" value="0.375" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3770833333333333" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3770833333333333" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

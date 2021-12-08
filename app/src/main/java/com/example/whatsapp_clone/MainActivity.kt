@@ -2,15 +2,11 @@ package com.example.whatsapp_clone
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.animation.AnimationUtils
-import androidx.appcompat.widget.Toolbar
-import androidx.core.view.isVisible
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.whatsapp_clone.databinding.ActivityMainBinding
-import com.google.android.material.tabs.TabLayout
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -20,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //set up the toolbar
-        val toolBar = binding.myToolbar
+        val toolBar = binding.mainActivityToolbar
         setSupportActionBar(toolBar)
 
         //toolbar with nav controller
@@ -34,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         //hiding the navController and the tabLayout in the splash
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
-            if (destination.id == R.id.splashFragment || destination.id == R.id.viewPager2Fragment) {
+            if (destination.id == R.id.splashFragment || destination.id == R.id.onBoardingViewPager2Fragment) {
                 supportActionBar?.hide()
 
             }

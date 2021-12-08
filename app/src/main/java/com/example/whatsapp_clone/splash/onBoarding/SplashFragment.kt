@@ -9,7 +9,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.whatsapp_clone.R
-import com.example.whatsapp_clone.databinding.FragmentCallsSplashBinding
 import com.example.whatsapp_clone.databinding.FragmentSplashBinding
 
 class SplashFragment : Fragment() {
@@ -29,7 +28,7 @@ class SplashFragment : Fragment() {
                 if (onBoardingFinished()){
                     findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
                 }else{
-                    findNavController().navigate(R.id.action_splashFragment_to_viewPager2Fragment)
+                    findNavController().navigate(R.id.action_splashFragment_to_onBoardingViewPager2Fragment)
                 }
             },2000
         )
