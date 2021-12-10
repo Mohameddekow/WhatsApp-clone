@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
+
         //hiding the navController and the tabLayout in the splash
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
             if (destination.id == R.id.splashFragment || destination.id == R.id.onBoardingViewPager2Fragment) {
@@ -36,7 +37,7 @@ class MainActivity : AppCompatActivity() {
             }
             else if (destination.id == R.id.homeFragment) {
                 toolBar.navigationIcon = null //hiding the back button from home. login , registration screen
-                supportActionBar?.hide()
+                supportActionBar?.show()
 
             }
             else if (destination.id == R.id.loginFragment || destination.id == R.id.registerFragment) {

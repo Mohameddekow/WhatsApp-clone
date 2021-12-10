@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    light mode-->
+    <item
+        android:id="@+id/lightMode"
+        android:title="light mode"
+        android:icon="@drawable/ic_light_mode"
+        app:showAsAction="always"/>
+
+<!--    dark mode-->
+    <item
+        android:id="@+id/darkMode"
+        android:title="dark mode"
+        android:icon="@drawable/ic_dark_mode"
+        android:visible="false"
+        app:showAsAction="always"/>
+
     <item
         android:id="@+id/searchMenu"
         android:title="Search"

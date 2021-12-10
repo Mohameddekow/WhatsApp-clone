@@ -73,7 +73,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.whatsapp_clone.HomeFragment"
-        android:label="test"
+        android:label="GBWhatsApp-clone"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_loginFragment"
@@ -102,21 +102,21 @@
     <fragment
         android:id="@+id/messageAnAccountFragment"
         android:name="com.example.whatsapp_clone.homeMenuFragments.messageAnAccount.MessageAnAccountFragment"
-        android:label="fragment_message_an_account"
+        android:label="Sending Message"
         tools:layout="@layout/fragment_message_an_account" />
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.whatsapp_clone.homeMenuFragments.profile.ProfileFragment"
-        android:label="fragment_profile"
+        android:label="Profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.whatsapp_clone.homeMenuFragments.settings.SettingsFragment"
-        android:label="fragment_settings"
+        android:label="Settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/starredMessagesFragment"
         android:name="com.example.whatsapp_clone.homeMenuFragments.starredMessages.StarredMessagesFragment"
-        android:label="fragment_starred_messages"
+        android:label="Starred Message"
         tools:layout="@layout/fragment_starred_messages" />
 </navigation>

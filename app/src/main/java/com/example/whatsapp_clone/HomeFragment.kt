@@ -2,6 +2,7 @@ package com.example.whatsapp_clone
 
 import android.os.Bundle
 import android.view.*
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
@@ -22,6 +23,7 @@ class HomeFragment : Fragment(), SearchView.OnQueryTextListener {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
+
         //setUpTabs //chats , groups, calls tabs
         setUpTabLayout()
 
@@ -33,12 +35,12 @@ class HomeFragment : Fragment(), SearchView.OnQueryTextListener {
         setHasOptionsMenu(true)
 
         //set up the toolbar
-        val toolBar = binding.homeToolbar
-         (activity as AppCompatActivity?)!!.setSupportActionBar(toolBar)
-
-        val navController = findNavController()
-        val appConfiguration = AppBarConfiguration(navController.graph, null)
-        toolBar.setupWithNavController(navController, appConfiguration)
+//        val toolBar = binding.homeToolbar
+//         (activity as AppCompatActivity?)!!.setSupportActionBar(toolBar)
+//
+//        val navController = findNavController()
+//        val appConfiguration = AppBarConfiguration(navController.graph, null)
+//        toolBar.setupWithNavController(navController, appConfiguration)
 
         return binding.root
     }
@@ -61,10 +63,13 @@ class HomeFragment : Fragment(), SearchView.OnQueryTextListener {
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.home_menu, menu)
 
+
+        //search
         val search = menu.findItem(R.id.searchMenu)
         val searchView =  search?.actionView as SearchView
         searchView.isSubmitButtonEnabled = true
         searchView.setOnQueryTextListener(this)
+
     }
 
     //set item click listener to my home menu items
@@ -82,10 +87,18 @@ class HomeFragment : Fragment(), SearchView.OnQueryTextListener {
             R.id.settingsFragment -> {
                 findNavController().navigate(R.id.action_homeFragment_to_settingsFragment)
             }
+            R.id.lightMode ->{
+                Toast.makeText(requireContext(), "clicked light mode", Toast.LENGTH_SHORT).show()
+            }
+            R.id.darkMode ->{
+                Toast.makeText(requireContext(), "clicked dark mode", Toast.LENGTH_SHORT).show()
+            }
+
+
             else -> {
             }
         }
-        return true
+        return  super.onOptionsItemSelected(item)
     }
 
 
@@ -97,7 +110,7 @@ class HomeFragment : Fragment(), SearchView.OnQueryTextListener {
         return true
     }
 
-   // search on character typed
+    // search on character typed
     override fun onQueryTextChange(newText: String?): Boolean {
         if (newText != null) {
             searchDatabase(newText)

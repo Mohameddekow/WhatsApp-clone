@@ -1,10 +1,9 @@
 package com.example.whatsapp_clone.homeMenuFragments.profile
 
 import android.os.Bundle
+import android.view.*
+import android.widget.Toast
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import com.example.whatsapp_clone.R
 import com.example.whatsapp_clone.databinding.FragmentProfileBinding
 
@@ -21,11 +20,32 @@ class ProfileFragment : Fragment() {
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
 
 
-
-
+        //enable support for option menu
+        setHasOptionsMenu(true)
 
         return binding.root
     }
+
+    //create profile menu
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.profile_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.personAccount ->{
+                Toast.makeText(requireContext(), "clicked person icon", Toast.LENGTH_SHORT).show()
+            }
+            R.id.logoutAccount ->{
+                Toast.makeText(requireContext(), "clicked logout", Toast.LENGTH_SHORT).show()
+            }
+            else ->{
+
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
 
 
 
